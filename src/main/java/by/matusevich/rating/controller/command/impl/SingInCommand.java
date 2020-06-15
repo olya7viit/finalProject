@@ -33,7 +33,7 @@ public class SingInCommand implements Command {
             if(userService.signIn(loginValue,passwordValue)){
                 request.setAttribute();
             }
-//TODO
+// TODO
 
         } catch (ServiceException e) {
            //TODO

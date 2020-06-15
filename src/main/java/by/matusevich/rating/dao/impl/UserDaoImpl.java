@@ -17,8 +17,7 @@ import java.util.List;
 
 public class UserDaoImpl implements UserDao {
     private Connection connection;
-    /*public static final String ADD_USER = "INSERT INTO user (name,surname,password,email,phone) " +
-            "VALUES (?,?,?,?,?)";*/
+
     private static final Logger LOGGER = LogManager.getLogger();
 
     public UserDaoImpl(){
@@ -27,16 +26,7 @@ public class UserDaoImpl implements UserDao {
 
     @Override
     public User add(User user) throws DaoException {
-       /* try(PreparedStatement statement = connection.prepareStatement(SQLQuery.ADD_USER)){
-            statement.setString(1,user.getFirstName());
-            statement.setString(2,user.getLastName());
-            statement.setString(3,user.getEmail());
-            statement.setString(4,user.getPassword());
-            statement.setString(5,user.getPhone());
-            statement.executeUpdate();
-        }catch (SQLException e) {
-            throw new DaoException("User has not been added",e);
-        }*/
+
         return user;
     }
 
